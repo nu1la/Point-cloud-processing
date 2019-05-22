@@ -53,7 +53,6 @@ max_iterations = 20
 goal_inliers = n * 0.5
 #data
 xyzs = np.array(coords)
-print(xyzs)
 ax.scatter3D(xyzs.T[0], xyzs.T[1], xyzs.T[2]) 
 # RANSAC
 m, b = run_ransac(xyzs, estimate, lambda x, y: is_inlier(x, y, 0.01), 3, goal_inliers, max_iterations)
