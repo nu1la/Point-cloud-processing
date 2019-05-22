@@ -1,8 +1,3 @@
-'''
-Created on 22 мая 2019 г.
-@author: Алексей
-'''
-#import matplotlib
 import matplotlib.pyplot as plt
 from mpl_toolkits import mplot3d
 import random
@@ -56,7 +51,6 @@ for i in range(n):
     coords.append([float(raw[i][0]), float(raw[i][1]), float(raw[i][2])])
 max_iterations = 20
 goal_inliers = n * 0.5
-
 #data
 xyzs = np.array(coords)
 print(xyzs)
